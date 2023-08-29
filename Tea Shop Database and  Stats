@@ -1,0 +1,26 @@
+--Create a Tea shop database
+
+CREATE TABLE Tea_Herbs (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, aisle INTEGER);
+
+INSERT INTO Tea_Herbs Values (1, "Black tea", 100, 2);
+INSERT INTO Tea_Herbs Values (2, "Green tea", 77, 2);
+INSERT INTO Tea_Herbs VAlues (3, "Blue Lotus tea", 77, 1);
+INSERT INTO Tea_Herbs Values (4, "Hibiscus tea", 90, 1);
+INSERT INTO Tea_Herbs Values (5, "Peppermint tea", 56, 5);
+INSERT INTO Tea_Herbs Values (6, "Spearmint tea", 200, 5);
+INSERT INTO Tea_Herbs Values (7, "Lemon Balm tea", 99, 5);
+INSERT INTO Tea_Herbs Values (8, "Earl Grey tea", 44, 2);
+INSERT INTO Tea_Herbs Values (9, "Chamomile tea", 200, 1);
+INSERT INTO Tea_Herbs Values (10, "Cinnamon Anise tea", 67, 4);
+INSERT INTO Tea_Herbs Values (11, "Ginger  tea", 99, 4);
+INSERT INTO Tea_Herbs Values (12, "White tea", 34, 2);
+INSERT INTO Tea_Herbs Values (13, "Rooibos tea", 22, 3);
+INSERT INTO Tea_Herbs Values (14, "Oolong tea", 56, 3);
+INSERT INTO Tea_Herbs Values (15, "Rosehip tea", 47, 1);
+
+SELECT * FROM Tea_Herbs ORDER BY aisle; 
+SELECT aisle , SUM(quantity) FROM Tea_Herbs GROUP BY aisle;
+
+
+
+
